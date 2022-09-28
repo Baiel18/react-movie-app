@@ -22,9 +22,10 @@ code {
   background-color: rgb(70, 70, 143);
   padding: 40px 0;
 }
+
 .container{
   max-width: 1200px;
-  padding: 0 12px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 .header .container{
@@ -44,6 +45,7 @@ input{
   grid-template-columns: repeat(5,1fr);
   grid-gap: 30px;
 }
+
 .card img{
  width:100% ; 
 }
@@ -53,8 +55,7 @@ input{
 
 .card {
   background-color: rgb(6, 6, 100);
-  /* position: relative; */
-  overflow: hidden;
+  overflow: hidden; 
 }
 .card:hover{
   cursor: pointer;
@@ -77,8 +78,6 @@ input{
   transform: translateY(-100%);
   opacity: 1;
 }
-
-
 .rate {
   background-color: rgb(116, 183, 94);
   padding: 5px;
@@ -90,3 +89,25 @@ input{
   background-color: brown;
 }
 
+@media (max-width:650px) {
+  .container{
+    max-width: 412px;
+    font-size: 10px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+  input{
+    border: solid 1.5px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: wheat;
+    width: 100px;
+  }
+  .card-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px; 
+  }
+  
+}

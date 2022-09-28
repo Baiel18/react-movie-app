@@ -1,3 +1,3 @@
 # WELCOME TO REACT MOVIE APP ME
 
-This project was github with [Create React App](https://Baiel18.github.io/react-movie-app).
+This project was github with [Create Movie](https://Baiel18.github.io/react-movie-app).
