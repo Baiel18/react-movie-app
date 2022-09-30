@@ -138,6 +138,10 @@ header a{
   width: 150px;
   border: solid 4px black;
 }
+.youtube{
+  width:560px;
+  height:315px;
+}
 @media (max-width:650px) {
   .container{
     max-width: 412px;
@@ -187,5 +191,9 @@ header a{
   header{
     background-color: rgb(114, 55, 95);
     padding: 20px;
+  }
+  .youtube{
+    width:360px;
+    height:215px;
   }
 }

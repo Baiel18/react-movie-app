@@ -56,8 +56,7 @@ const Detailpage = () => {
                                 return (
                                     <div>
                                         <h1 className="budget">{video.name}</h1>
-                                        <iframe width="360"
-                                            height="115"
+                                        <iframe className="youtube" 
                                             src={`https://www.youtube.com/embed/${video.key}`}
                                             title="YouTube video player"
                                             frameborder="0"
