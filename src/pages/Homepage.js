@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Movie from '../component/Movie'
 
 const API_KEY = '365580a077bde095848bee15cf5a0299'
-const MOVIE_API = `https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}`;
+const MOVIE_API = `https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`;
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?&api_key=${API_KEY}&query=`
 
 function Homepage() {
