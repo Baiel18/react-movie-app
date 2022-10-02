@@ -51,7 +51,6 @@ const Detailpage = () => {
                             })}
                             </div>
                             <button className="buttonMovie">смотреть</button>
-
                             {videos.splice(0, 1).map(video => {
                                 return (
                                     <div>
@@ -66,8 +65,6 @@ const Detailpage = () => {
                                     </div>
                                 )
                             })}
-
-
                         </div>
                     </div>
                 </div>

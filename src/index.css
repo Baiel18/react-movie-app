@@ -146,6 +146,27 @@ header a{
 .info{
   color: antiquewhite;
 }
+/* about */
+.about{
+  display: flex;
+  justify-content: center;
+}
+.aboutContainerOne{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutText{
+  width: 700px;
+  font-size: 21px;
+}
+.gifProgrammer{
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+}
+
 @media (max-width:650px) {
   .container{
     font-size: 10px;
@@ -198,5 +219,14 @@ header a{
   .youtube{
     width:360px;
     height:215px;
+  }
+  .aboutText{
+    width: 400px;
+    font-size: 23px;
+  }
+  .gifProgrammer{
+    width: 380px;
+    height: 200px;
+    border-radius: 15px;
   }
 }
