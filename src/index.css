@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(72, 60, 112);
-  margin: 0;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url("https://images.unsplash.com/photo-1664712470238-de37cf450048?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+  background-size:cover;
+    margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -19,7 +20,6 @@ code {
   box-sizing: border-box;
 }
 .header{
-  background-color: rgba(20, 20, 84, 0.599);
   padding: 30px 0;
   border: none;
   margin-bottom: 40px;
@@ -28,6 +28,9 @@ code {
   max-width: 1200px;
   padding:0 25px;
   margin: 0 auto;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 5px;
 }
 .header .container{
   display: flex;
@@ -55,8 +58,10 @@ input{
 }
 
 .card {
-  background-color: rgb(6, 6, 100);
+  background-color: rgba(34, 6, 100, 0.192);
   overflow: hidden; 
+  border-radius: 10px;
+  padding: 5px;
 }
 .card:hover{
   cursor: pointer;
@@ -72,13 +77,21 @@ input{
 .rate.red{
   background-color: brown;
 }
-
+.containerNav{
+ display: flex;
+  flex-direction: column;
+}
 header{
-  background-color: rgb(114, 55, 95);
-  padding: 50px;
+  position: fixed;
+ 
 }
 header a{
-  margin-right: 60px;
+  border: 1px solid white;
+  border-left: none;
+  margin: 15px;
+  border-radius: 0px 5px 5px 0px ;
+  padding: 5px 10px;
+  margin-top: 20px;
 }
 .poster{
   background-color: rgb(42, 42, 66);
@@ -166,9 +179,28 @@ header a{
   height: 300px;
   border-radius: 15px;
 }
+
+/* contact */
+.contactContentOne{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.netWork{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .instagramIcon{
   width: 40px;
   height: 100%;
+}
+.whatsappIcon{
+  width:45px;
+}
+.telegramIcon{
+  width: 70px;
 }
 .instagramText{
   text-decoration: none;
@@ -177,11 +209,30 @@ header a{
   gap: 10px;
   align-items: center;
 }
+/* home */
+.home{
+  text-align: center;
+}
 @media (max-width:650px) {
   .container{
+    display: flex;
+    gap: 5px;
     font-size: 10px;
     padding: 20px;
     margin: 0;
+  }
+  .containerNav{
+    display: flex;
+     flex-direction: inherit;
+   }
+  header{
+    position:inherit;
+  }
+  header a{
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
   }
   input{
     border: solid 1.5px;
@@ -239,4 +290,19 @@ header a{
     height: 200px;
     border-radius: 15px;
   }
+}
+@media (max-width:1024px) {
+  .detail-info{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-left: 60px;
+  }
+}
+
+.text {
+  display: none;
+}
+.text.show {
+  display: block;
 }
